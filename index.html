@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#422741">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <title>LoloBuy spreadsheet: guida a taglie, foto QC e categorie</title>
+  <meta name="description" content="Una guida indipendente al LoloBuy spreadsheet: scopri categorie, confronta taglie e materiali, leggi le foto QC e prepara le domande prima dell’acquisto.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="LoloBuy spreadsheet: scegli con più criterio">
+  <meta property="og:description" content="Sneakers, abbigliamento e accessori: categorie e guide pratiche per confrontare misure, dettagli e informazioni prima di acquistare.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta property="og:image:alt" content="Sneaker Nike rossa su fondo rosso">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LoloBuy spreadsheet: guida pratica alla scelta">
+  <meta name="twitter:description" content="Categorie, misure e controlli fotografici spiegati in italiano.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1000&amp;q=80">
+
+  <!--
+    File: index.html
+    Ricerca editoriale: LoloBuy spreadsheet.
+    Google non era accessibile tramite lo strumento di ricerca:
+    non è stato possibile verificare i primi dieci risultati di Google.
+    Sono state consultate dieci pagine tramite ricerca web alternativa,
+    appartenenti a otto domini, senza copiarne i testi né riprenderne
+    prezzi, promozioni, valutazioni o condizioni operative.
+
+    Pagine consultate:
+    https://lolobuy-sheet.com/
+    https://lolobuysheet.de/en/
+    https://lolobuyspread.com/lolobuy-spreadsheet/
+    https://lolobuysheet.com/
+    https://lolobuyspread.com/
+    https://w2cspreadsheet.com/agents/lolobuy
+    https://lolobuyspreadsheet.net/
+    https://lolobuyspreadsheet.se/
+    https://lolobuy-sheet.net/
+    https://lolobuyspread.com/lolobuy-spreadsheet-finds/
+
+    Temi ricorrenti osservati: categorie, finds, fonti dei prodotti,
+    foto QC, misure e valutazione dei costi.
+    Parole chiave secondarie adottate:
+    LoloBuy finds; guida LoloBuy in italiano; foto QC LoloBuy;
+    taglie LoloBuy; spedizione LoloBuy.
+    I temi di ricerca a coda lunga sono sviluppati nei contenuti visibili.
+    Nessun canonical viene inventato: il dominio di pubblicazione
+    di questo documento non è stato fornito.
+  -->
+
+  <style>
+    :root {
+      --paper: #f6f2e9;
+      --white: #fffdf8;
+      --ink: #29232b;
+      --muted: #655d66;
+      --plum: #422741;
+      --lime: #d9ed8b;
+      --line: #dcd4d9;
+      --radius: 22px;
+      --width: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid #805b90;
+      outline-offset: 5px;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    h1, h2, h3, p, figure { margin: 0; }
+    h1, h2, h3 { line-height: 1.13; }
+    h1 { font-size: clamp(2.8rem, 6.6vw, 5.8rem); letter-spacing: -.065em; }
+    h2 { font-size: clamp(1.8rem, 3.3vw, 3rem); letter-spacing: -.045em; }
+    h3 { font-size: 1.23rem; letter-spacing: -.02em; }
+    p + p { margin-top: 1rem; }
+    .wrap { width: min(var(--width), calc(100% - 40px)); margin-inline: auto; }
+    .eyebrow {
+      display: block;
+      font-size: .72rem;
+      font-weight: 750;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .muted { color: var(--muted); }
+    .masthead { border-bottom: 1px solid var(--line); }
+    .masthead-inner {
+      min-height: 82px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+    .brand { font-weight: 850; font-size: 1.3rem; text-decoration: none; letter-spacing: -.055em; }
+    .brand span { color: #775272; }
+    .header-note { font-size: .8rem; color: var(--muted); }
+    .header-link { font-size: .88rem; font-weight: 700; }
+    .categories { padding-block: 24px 30px; }
+    .category-heading { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; margin-bottom: 14px; }
+    .category-heading h2 { font-size: 1rem; letter-spacing: 0; }
+    .category-heading p { font-size: .8rem; color: var(--muted); }
+    .category-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+    .category-grid a {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--white);
+      text-decoration: none;
+      font-size: .84rem;
+      font-weight: 650;
+    }
+    .category-grid a:hover { background: var(--lime); border-color: var(--plum); }
+    .arrow { font-size: 1rem; flex: 0 0 auto; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--plum);
+      color: var(--white);
+    }
+    .hero-copy { padding: clamp(28px, 4vw, 54px); }
+    .hero .eyebrow { color: var(--lime); margin-bottom: 22px; }
+    .hero h1 span { color: var(--lime); }
+    .hero-copy > p { margin-top: 25px; max-width: 48ch; color: #eee4ec; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      min-height: 50px;
+      margin-top: 27px;
+      padding: 12px 21px;
+      border-radius: 100px;
+      background: var(--lime);
+      color: var(--plum);
+      font-size: .9rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+    .button:hover { background: #e8f5ba; }
+    .hero-figure { position: relative; background: #c32736; min-height: 420px; }
+    .hero-figure img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-figure figcaption {
+      position: absolute;
+      inset: auto 16px 16px;
+      width: fit-content;
+      padding: 7px 12px;
+      border-radius: 20px;
+      background: #fffdf8;
+      color: var(--ink);
+      font-size: .7rem;
+    }
+    .answer {
+      display: grid;
+      grid-template-columns: .8fr 2fr;
+      gap: 30px;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .answer h2 { font-size: 1.15rem; letter-spacing: -.02em; }
+    .answer p { max-width: 78ch; }
+    .section { padding-block: 62px; }
+    .section-top { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 28px; }
+    .section-top .eyebrow { color: #775272; margin-bottom: 12px; }
+    .section-top > p { max-width: 37ch; font-size: .9rem; color: var(--muted); }
+    .editorial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .editorial-card { overflow: hidden; border-radius: var(--radius); background: var(--white); border: 1px solid var(--line); }
+    .editorial-image { background: #eeeae7; }
+    .editorial-image img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
+    .editorial-card figcaption { padding: 11px 20px; font-size: .73rem; color: var(--muted); border-bottom: 1px solid var(--line); }
+    .card-copy { padding: 26px; }
+    .card-copy .eyebrow { margin-bottom: 12px; color: #775272; }
+    .card-copy p { margin-top: 14px; color: var(--muted); }
+    .card-copy a { display: inline-block; margin-top: 19px; font-size: .86rem; font-weight: 750; }
+    .photo-note { margin-top: 18px; font-size: .78rem; color: var(--muted); }
+
+    .method { padding: 36px; background: var(--lime); border-radius: var(--radius); }
+    .method-head { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; align-items: end; }
+    .method .eyebrow { margin-bottom: 12px; }
+    .steps { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .steps li { border-top: 1px solid #889954; padding-top: 18px; }
+    .step-number { display: block; font-size: .78rem; font-weight: 750; margin-bottom: 14px; }
+    .steps p { margin-top: 12px; font-size: .92rem; }
+
+    .journal { border-top: 1px solid var(--line); }
+    .article {
+      display: grid;
+      grid-template-columns: .75fr 1.65fr;
+      gap: 40px;
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .article-label { color: #775272; margin-bottom: 14px; }
+    .article-title h3 { font-size: 1.6rem; }
+    .article-body h4 { font-size: 1rem; margin: 23px 0 7px; }
+    .article-body h4:first-child { margin-top: 0; }
+    .article-body p { color: #514b54; }
+    .article-body ul { margin: 14px 0 0; padding-left: 21px; }
+    .article-body li { margin-bottom: 7px; }
+    .table-container { margin-top: 25px; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: .87rem; }
+    th, td { padding: 13px 15px; text-align: left; border: 1px solid var(--line); vertical-align: top; }
+    th { background: #ebe3eb; }
+    td { background: var(--white); }
+    caption { text-align: left; margin-bottom: 10px; font-weight: 700; }
+
+    .faq-layout { display: grid; grid-template-columns: .75fr 1.65fr; gap: 40px; }
+    .faq-heading p { margin-top: 18px; color: var(--muted); font-size: .92rem; }
+    details { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; padding: 20px 4px; font-weight: 700; }
+    details p { padding: 0 4px 22px; color: #514b54; }
+    .closing { background: var(--plum); color: var(--white); border-radius: var(--radius); padding: 36px; display: flex; justify-content: space-between; gap: 30px; align-items: center; }
+    .closing h2 { max-width: 20ch; font-size: 2rem; }
+    .closing p { margin-top: 12px; max-width: 58ch; color: #eee4ec; }
+    .closing .button { flex-shrink: 0; margin-top: 0; }
+    footer { margin-top: 50px; padding: 27px 0 35px; border-top: 1px solid var(--line); }
+    .footer-inner { display: grid; grid-template-columns: .7fr 1.6fr; gap: 36px; }
+    footer p { color: var(--muted); font-size: .77rem; }
+    footer .brand { font-size: 1.05rem; }
+
+    @media (max-width: 850px) {
+      .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .hero { grid-template-columns: 1fr 1fr; }
+      .hero h1 { font-size: clamp(2.7rem, 6.3vw, 4.6rem); }
+      .hero-figure { min-height: 390px; }
+      .article, .faq-layout { grid-template-columns: 1fr; gap: 22px; }
+      .article-title h3 { max-width: 30ch; }
+      .steps { gap: 17px; }
+      .header-note { display: none; }
+    }
+    @media (max-width: 600px) {
+      .wrap { width: calc(100% - 28px); }
+      .masthead-inner { min-height: 69px; }
+      .header-link { font-size: .77rem; }
+      .category-heading { display: block; }
+      .category-heading p { margin-top: 6px; }
+      .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .category-grid a { padding: 11px; min-height: 59px; font-size: .79rem; }
+      .hero { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 3.45rem; }
+      .hero-figure { min-height: 0; }
+      .hero-figure img { height: auto; aspect-ratio: 4 / 3; }
+      .answer, .editorial-grid, .method-head, .steps, .footer-inner { grid-template-columns: 1fr; }
+      .answer { gap: 12px; }
+      .section { padding-block: 42px; }
+      .section-top { display: block; }
+      .section-top > p { margin-top: 16px; }
+      .method { padding: 25px; }
+      .steps { gap: 20px; }
+      .steps li { padding-top: 14px; }
+      .step-number { margin-bottom: 8px; }
+      .closing { display: block; padding: 28px; }
+      .closing .button { margin-top: 24px; }
+      .footer-inner { gap: 15px; }
+      th, td { padding: 10px; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .category-grid a, .button { transition: background-color .15s ease; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "LoloBuy spreadsheet: guida a taglie, foto QC e categorie",
+    "description": "Guida indipendente in italiano per confrontare categorie, misure, materiali, fotografie e informazioni prima dell’acquisto.",
+    "inLanguage": "it",
+    "about": {
+      "@type": "Thing",
+      "name": "LoloBuy spreadsheet",
+      "description": "Ricerca e organizzazione di riferimenti a prodotti, con attenzione a misure, varianti e controlli fotografici."
+    },
+    "hasPart": [
+      {
+        "@type": "Article",
+        "headline": "Taglie LoloBuy: partire dalle misure reali",
+        "inLanguage": "it",
+        "description": "Come confrontare la lunghezza del piede, la soletta e le misure dei capi, distinguendo i dati disponibili dalle informazioni mancanti."
+      },
+      {
+        "@type": "Article",
+        "headline": "Foto QC LoloBuy: leggere i dettagli senza indovinare",
+        "inLanguage": "it",
+        "description": "Quali fotografie richiedere per osservare cuciture, suole, chiusure e dimensioni, e quali limiti ha un controllo visivo."
+      },
+      {
+        "@type": "Article",
+        "headline": "Spedizione LoloBuy: preparare un confronto completo",
+        "inLanguage": "it",
+        "description": "Quali voci raccogliere per confrontare costo dell’articolo, consegna, imballaggio e condizioni di reso."
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "it",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che cos’è un LoloBuy spreadsheet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "È una raccolta organizzata di riferimenti a prodotti usata come punto di partenza per la ricerca. Prima di acquistare bisogna verificare la scheda originale, la variante, le misure e le condizioni applicabili."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Questa pagina è il sito ufficiale di LoloBuy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. È una guida editoriale indipendente. I collegamenti generali aprono Hipobuyfind; i collegamenti di categoria aprono le rispettive sezioni di Hipobuyfind. Non vengono gestiti ordini o account LoloBuy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come scegliere la taglia quando la tabella è incompleta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chiedi le misure mancanti prima di acquistare e confrontale con un capo o una scarpa che usi già. Per i vestiti specifica come è stata presa la misura; per le scarpe non confondere lunghezza del piede e lunghezza della soletta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le foto QC garantiscono l’autenticità di un prodotto?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Le foto possono aiutare a osservare dettagli visibili, ma non certificano autenticità, composizione o durata. Per un acquisto di marca servono anche informazioni sul venditore, provenienza e documentazione pertinente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dove verificare prezzi, disponibilità e tempi di consegna?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verifica queste informazioni sulla scheda del prodotto e presso il servizio che gestisce l’ordine. Questa guida non pubblica prezzi o tempi garantiti: variante, destinazione e condizioni del servizio possono cambiare il risultato."
+        }
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/jspzh/">
+</head>
+
+<body>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="brand" href="https://www.hipobuyfind.com" aria-label="Apri Hipobuyfind">
+        QUADERNO<span> / FINDS</span>
+      </a>
+      <span class="header-note">Una guida indipendente, in italiano</span>
+      <a class="header-link" href="https://www.hipobuyfind.com">Esplora Hipobuyfind ↗</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="categories" aria-label="Categorie su Hipobuyfind">
+      <div class="category-heading">
+        <h2>Parti dalla categoria</h2>
+        <p>Dieci percorsi per restringere la ricerca.</p>
+      </div>
+      <div class="category-grid">
+        <a href="https://hipobuyfind.com/category-911-Shoes.html">
+          <span>Scarpe</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">
+          <span>Felpe e maglioni</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-913-T-Shirts.html">
+          <span>T-shirt</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-914-Jackets.html">
+          <span>Giacche</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">
+          <span>Pantaloni e shorts</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-916-Headwear.html">
+          <span>Cappelli e copricapi</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-917-Sets.html">
+          <span>Completi</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">
+          <span>Intimo</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-919-Jersey.html">
+          <span>Maglie sportive</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-920-Accessories.html">
+          <span>Accessori</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <span class="eyebrow">Il taccuino della scelta</span>
+        <h1 id="page-title">LoloBuy spreadsheet.<br><span>Guarda meglio.</span><br>Scegli con calma.</h1>
+        <p>Un’immagine attira l’attenzione. Le misure, i materiali e le informazioni sulla scheda aiutano a decidere. Qui trovi un metodo semplice per passare dall’ispirazione a un confronto ragionato.</p>
+        <a class="button" href="https://www.hipobuyfind.com">
+          Esplora su Hipobuyfind <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <figure class="hero-figure">
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+          alt="Sneaker Nike rossa con suola sagomata su fondo rosso"
+          width="1000"
+          height="1000"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
+        <figcaption>Nike · riferimento visivo, non una scheda di vendita</figcaption>
+      </figure>
+    </section>
+
+    <section class="answer" aria-labelledby="definition-title">
+      <h2 id="definition-title">Che cosa trovi in questa guida?</h2>
+      <p>Un <strong>LoloBuy spreadsheet</strong> è una raccolta organizzata di riferimenti a prodotti. Questa guida LoloBuy in italiano spiega come valutarli: categoria, variante, misure, foto e condizioni da verificare. I pulsanti portano a Hipobuyfind, dove puoi proseguire la ricerca.</p>
+    </section>
+
+    <section class="section" aria-labelledby="inspiration-title">
+      <div class="section-top">
+        <div>
+          <span class="eyebrow">01 / Osservare</span>
+          <h2 id="inspiration-title">Due oggetti.<br>Domande diverse.</h2>
+        </div>
+        <p>Per selezionare LoloBuy finds utili, parti dai dettagli che contano per l’uso che ne farai.</p>
+      </div>
+
+      <div class="editorial-grid">
+        <article class="editorial-card">
+          <figure>
+            <div class="editorial-image">
+              <img
+                src="https://assets.christiandior.com/is/image/diorprod/3SN340ZQLH577_E03?wid=800&amp;hei=600&amp;qlt=75&amp;fit=fit"
+                alt="Sneaker Dior B23 League bassa con motivo Oblique blu e beige"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <figcaption>Dior B23 League · immagine di riferimento dalla risorsa Dior</figcaption>
+          </figure>
+          <div class="card-copy">
+            <span class="eyebrow">Scarpe / proporzioni e appoggio</span>
+            <h3>La silhouette non racconta la calzata</h3>
+            <p>Per confrontare sneakers basse considera forma della punta, spazio sull’avampiede e misure disponibili. Una foto laterale mostra il profilo; la comodità richiede informazioni ulteriori.</p>
+            <a href="https://hipobuyfind.com/category-911-Shoes.html">Esplora la categoria scarpe ↗</a>
+          </div>
+        </article>
+
+        <article class="editorial-card">
+          <figure>
+            <div class="editorial-image">
+              <img
+                src="https://www.fashionphile.com/cdn/shop/files/f24a687e8217fc94523084608d101a68.jpg?v=1764849749&amp;width=800"
+                alt="Borsa Gucci Go beige con motivo GG, finiture nere e catena dorata"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <figcaption>Gucci Go · immagine di riferimento dalla risorsa Fashionphile</figcaption>
+          </figure>
+          <div class="card-copy">
+            <span class="eyebrow">Accessori / dimensioni e funzione</span>
+            <h3>Prima il contenuto, poi il contenitore</h3>
+            <p>Per scegliere una borsa da tutti i giorni verifica apertura, profondità e lunghezza della tracolla. Controlla le misure degli oggetti che vuoi portare: la sola larghezza esterna non basta.</p>
+            <a href="https://hipobuyfind.com/category-920-Accessories.html">Esplora la categoria accessori ↗</a>
+          </div>
+        </article>
+      </div>
+      <p class="photo-note">Le immagini illustrano dettagli di stile. Non attestano disponibilità su Hipobuyfind, autenticità dei prodotti presenti altrove o rapporti commerciali con i marchi citati.</p>
+    </section>
+
+    <section class="method" aria-labelledby="method-title">
+      <div class="method-head">
+        <div>
+          <span class="eyebrow">02 / Il metodo</span>
+          <h2 id="method-title">Tre passaggi prima<br>di aggiungere un articolo.</h2>
+        </div>
+        <p>Una selezione breve e ben documentata è più facile da confrontare di una lunga lista di immagini salvate.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="step-number">01 — DEFINISCI</span>
+          <h3>Scrivi cosa ti serve</h3>
+          <p>Per cercare abbigliamento per tutti i giorni, indica stagione, vestibilità e abbinamenti. Per scegliere una giacca da sovrapporre a una felpa, considera anche lo spazio necessario sotto il capo.</p>
+        </li>
+        <li>
+          <span class="step-number">02 — CONFRONTA</span>
+          <h3>Usa dati comparabili</h3>
+          <p>Per confrontare materiali e finiture, affianca descrizioni e foto dello stesso dettaglio. Se manca un dato, segnalo come informazione da richiedere prima dell’acquisto.</p>
+        </li>
+        <li>
+          <span class="step-number">03 — VERIFICA</span>
+          <h3>Riapri la scheda</h3>
+          <p>Per controllare un link prodotto, verifica che titolo, colore, taglia e quantità corrispondano alla scelta. Un riferimento salvato in passato può aprire una scheda modificata.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" aria-labelledby="journal-title">
+      <div class="section-top">
+        <div>
+          <span class="eyebrow">03 / Dossier pratico</span>
+          <h2 id="journal-title">Piccole guide,<br>decisioni concrete.</h2>
+        </div>
+        <p>Tre articoli da leggere prima di scegliere taglia, valutare fotografie o confrontare un preventivo.</p>
+      </div>
+
+      <div class="journal">
+        <article class="article" aria-labelledby="size-title">
+          <div class="article-title">
+            <span class="eyebrow article-label">Articolo 01 / Vestibilità</span>
+            <h3 id="size-title">Taglie LoloBuy: partire dalle misure reali</h3>
+          </div>
+          <div class="article-body">
+            <h4>Come confrontare la taglia delle sneakers</h4>
+            <p>Misura entrambi i piedi seguendo le istruzioni della tabella del modello e considera il piede più lungo. Per confrontare taglie EU e centimetri, verifica a cosa si riferisce il valore: lunghezza del piede, soletta e suola esterna sono misure diverse. Evita una conversione universale tra marchi.</p>
+
+            <h4>Come scegliere una felpa dalla tabella misure</h4>
+            <p>Usa una felpa che indossi già come riferimento. Per misurare torace e lunghezza di una felpa, appoggiala in piano e annota i punti di misura. Controlla se il valore del torace indica la larghezza da ascella ad ascella oppure la circonferenza completa.</p>
+
+            <h4>T-shirt, pantaloni e completi</h4>
+            <p>Per scegliere una T-shirt oversize confronta spalle, torace e lunghezza, oltre alla lettera sulla taglia. Per confrontare la vita dei pantaloni, chiarisci se il tessuto è elastico e se la misura è presa a riposo. Per scegliere un completo, verifica separatamente parte superiore e inferiore.</p>
+
+            <h4>Cappelli, intimo e maglie sportive</h4>
+            <p>Per scegliere un cappello regolabile controlla l’intervallo di circonferenza dichiarato. Per valutare una maglia sportiva considera l’uso previsto e gli strati sottostanti. Prima di scegliere intimo online, verifica composizione, misure e condizioni di reso applicabili alla categoria.</p>
+          </div>
+        </article>
+
+        <article class="article" aria-labelledby="qc-title">
+          <div class="article-title">
+            <span class="eyebrow article-label">Articolo 02 / Dettagli visibili</span>
+            <h3 id="qc-title">Foto QC LoloBuy: leggere i dettagli senza indovinare</h3>
+          </div>
+          <div class="article-body">
+            <h4>Quali foto chiedere prima dell’acquisto</h4>
+            <p>Per controllare una sneaker dalle foto, cerca viste laterali, tallone, punta e suola. Per controllare cuciture e simmetria, servono immagini frontali e ravvicinate sufficientemente nitide. Distingui sempre le foto promozionali dalle immagini dell’articolo effettivamente esaminato.</p>
+
+            <h4>Che cosa osservare nei capi</h4>
+            <p>Per valutare una giacca dalle fotografie, osserva cerniera, polsini, fodera e punti di unione. Per verificare le misure dalle foto, chiedi che il metro sia leggibile e posizionato lungo il tratto richiesto. Una ripresa obliqua rende il confronto meno affidabile.</p>
+
+            <h4>Accessori, chiusure e piccoli componenti</h4>
+            <p>Per controllare una borsa prima di comprarla, osserva manici, attacchi della tracolla, chiusura e interno. Per scegliere gioielli e accessori metallici, chiedi composizione e dimensioni: il colore in fotografia non permette di identificare il metallo.</p>
+
+            <h4>I limiti del controllo fotografico</h4>
+            <p>Per confrontare colori online, considera luce, bilanciamento del bianco e schermo. Le immagini possono mostrare difetti visibili, ma non provano comfort, composizione o resistenza nel tempo. Un controllo QC fotografico non equivale a una certificazione di autenticità.</p>
+          </div>
+        </article>
+
+        <article class="article" aria-labelledby="shipping-title">
+          <div class="article-title">
+            <span class="eyebrow article-label">Articolo 03 / Prima del pagamento</span>
+            <h3 id="shipping-title">Spedizione LoloBuy: preparare un confronto completo</h3>
+          </div>
+          <div class="article-body">
+            <h4>Come confrontare il costo complessivo</h4>
+            <p>Per preparare un budget d’acquisto, separa il costo dell’articolo dalle altre voci. Per confrontare due preventivi di spedizione, usa la stessa destinazione e le stesse caratteristiche del pacco. Richiedi al servizio utilizzato il criterio di calcolo e le eventuali esclusioni.</p>
+
+            <h4>Peso, volume e imballaggio</h4>
+            <p>Per stimare l’ingombro di più articoli, considera anche scatole e protezioni. Prima di decidere se conservare la scatola delle scarpe, valuta protezione, spazio e uso futuro. Chiedi come cambierebbe il preventivo con le diverse opzioni di imballaggio.</p>
+
+            <h4>Disponibilità, resi e informazioni mancanti</h4>
+            <p>Per verificare la disponibilità di una variante, riapri la scheda al momento dell’ordine. Per controllare le condizioni di reso, leggi termini, scadenze e possibili costi presso il soggetto che gestisce la transazione. Conserva una copia delle informazioni rilevanti.</p>
+
+            <p>Per valutare una consegna in Italia, chiedi quali informazioni sono incluse nel preventivo e consulta le indicazioni applicabili alla destinazione. Questa pagina non indica tariffe, procedure doganali o tempi garantiti.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="table-container" role="region" aria-label="Tabella dei controlli prima dell’acquisto" tabindex="0">
+        <table>
+          <caption>Il promemoria da tenere accanto alla scheda prodotto</caption>
+          <thead>
+            <tr>
+              <th scope="col">Elemento</th>
+              <th scope="col">Dato da raccogliere</th>
+              <th scope="col">Domanda utile</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Scarpe</th>
+              <td>Tabella del modello e riferimento in centimetri</td>
+              <td>Il valore indica piede o soletta?</td>
+            </tr>
+            <tr>
+              <th scope="row">Abbigliamento</th>
+              <td>Misure del capo e composizione dichiarata</td>
+              <td>Le misure sono prese in piano?</td>
+            </tr>
+            <tr>
+              <th scope="row">Accessori</th>
+              <td>Dimensioni, chiusura e componenti</td>
+              <td>Le fotografie mostrano anche l’interno?</td>
+            </tr>
+            <tr>
+              <th scope="row">Consegna</th>
+              <td>Preventivo riferito al pacco e alla destinazione</td>
+              <td>Quali voci sono incluse e quali escluse?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section faq-layout" aria-labelledby="faq-title">
+      <div class="faq-heading">
+        <span class="eyebrow">04 / Risposte dirette</span>
+        <h2 id="faq-title">Prima di<br>proseguire.</h2>
+        <p>Le risposte essenziali per usare un LoloBuy spreadsheet come punto di partenza della ricerca.</p>
+      </div>
+
+      <div>
+        <details open>
+          <summary>Che cos’è un LoloBuy spreadsheet?</summary>
+          <p>È una raccolta organizzata di riferimenti a prodotti usata come punto di partenza per la ricerca. Prima di acquistare bisogna verificare la scheda originale, la variante, le misure e le condizioni applicabili.</p>
+        </details>
+        <details>
+          <summary>Questa pagina è il sito ufficiale di LoloBuy?</summary>
+          <p>No. È una guida editoriale indipendente. I collegamenti generali aprono Hipobuyfind; i collegamenti di categoria aprono le rispettive sezioni di Hipobuyfind. Non vengono gestiti ordini o account LoloBuy.</p>
+        </details>
+        <details>
+          <summary>Come scegliere la taglia quando la tabella è incompleta?</summary>
+          <p>Chiedi le misure mancanti prima di acquistare e confrontale con un capo o una scarpa che usi già. Per i vestiti specifica come è stata presa la misura; per le scarpe non confondere lunghezza del piede e lunghezza della soletta.</p>
+        </details>
+        <details>
+          <summary>Le foto QC garantiscono l’autenticità di un prodotto?</summary>
+          <p>No. Le foto possono aiutare a osservare dettagli visibili, ma non certificano autenticità, composizione o durata. Per un acquisto di marca servono anche informazioni sul venditore, provenienza e documentazione pertinente.</p>
+        </details>
+        <details>
+          <summary>Dove verificare prezzi, disponibilità e tempi di consegna?</summary>
+          <p>Verifica queste informazioni sulla scheda del prodotto e presso il servizio che gestisce l’ordine. Questa guida non pubblica prezzi o tempi garantiti: variante, destinazione e condizioni del servizio possono cambiare il risultato.</p>
+        </details>
+      </div>
+    </section>
+
+    <aside class="closing" aria-label="Prosegui la ricerca su Hipobuyfind">
+      <div>
+        <h2>La prossima scelta parte da una buona domanda.</h2>
+        <p>Apri Hipobuyfind, scegli una categoria e confronta le informazioni disponibili con il tuo promemoria.</p>
+      </div>
+      <a class="button" href="https://www.hipobuyfind.com">
+        Vai a Hipobuyfind <span aria-hidden="true">↗</span>
+      </a>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>
+        <a class="brand" href="https://www.hipobuyfind.com">QUADERNO / FINDS ↗</a>
+      </div>
+      <p>Guida indipendente in lingua italiana. LoloBuy, Nike, Dior, Gucci e gli altri nomi commerciali appartengono ai rispettivi titolari. La loro citazione ha finalità descrittiva e non implica affiliazione o approvazione. Le fotografie sono riferimenti visivi; questa pagina non vende prodotti e non certifica articoli o venditori.</p>
+    </div>
+  </footer>
+</body>
+</html>
